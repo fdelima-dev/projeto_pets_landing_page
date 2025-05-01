@@ -23,6 +23,11 @@ h1, h2, h3{
     font-family: 'Petters', sans-serif;
     color: variaveis.$corSecundaria;
 }
+.clearfix{
+    content: '';
+    clear: both;
+    display: table;
+}
 h2{
     width: 100%;
     padding: 14px 0;
@@ -34,7 +39,7 @@ h2{
     color: variaveis.$corTextoBotao;
     text-decoration: none;
     padding: 15px 25px;
-    margin: 8px 20px auto;
+    margin: 8px auto;
     display: block;
     width: 300px;
     transition: background-color .5s ease;

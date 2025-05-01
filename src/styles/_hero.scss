@@ -1,18 +1,38 @@
 @use 'variaveis';
 
-.hero{
+.hero {
     background-image: url('../../dist/images/hero_desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 65vh;
     text-align: center;
     padding: 4.5vw;
-
+  
+    @media (max-width: 768px) {
+        background-image: url('../../dist/images/hero_celular.png');
+        height: 45vh;
+      }
+    
+      @media (max-width: 546px) {
+        background-image: url('../../dist/images/hero_celular.png');
+        height: 25vh;
+      }
+    
+      @media (max-width: 468px) {
+        background-image: url('../../dist/images/hero_celular.png');
+        height: 15vh;
+      }
+     
 
     &__content{
         width: 350px;
         margin-left: 120px;
         text-align: center;
+
+        @media (max-width: 768px){
+            margin: 20px auto;
+            display: block;
+        }
 
         &__branding{
 
@@ -21,6 +41,12 @@
                 display: block;
                 margin-left: 55px;
                 margin-bottom: 14px;
+                
+                @media (max-width: 768px){
+                    margin-top: 120px;
+                    margin-left: 55px;
+                    display: flex;
+                }
 
             }
         }

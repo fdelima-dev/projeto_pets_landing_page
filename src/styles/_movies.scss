@@ -12,6 +12,9 @@
     &__title{
         width: 350px;
         margin: 0 auto;
+        @media (max-width: 768px){
+            margin-top: 300px;
+        }
 
     }
 
@@ -21,10 +24,18 @@
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width: 768px){
+            display: block;
+            
+        }
+
         &__item{
 
             list-style: none;
-   
+            @media (max-width: 768px){
+                display: block;
+                margin-bottom: 50px;
+            }
             
             img{
                 width: 350px;

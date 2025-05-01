@@ -7,6 +7,17 @@
     text-align: center;
     padding: 5.4vw;
 
+    @media (max-width: 968px){
+        max-width: 400px;
+        padding: 20px;
+        margin: 10px;
+    }
+    @media (max-width: 768px){
+        max-width: 400px;
+        padding: 20px;
+        margin: 10px;
+    }
+
     &__title{
         width: 350px;
         margin: 0 auto;
@@ -17,9 +28,28 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr; // Apenas 1 item por linha em smartphones
+            margin: 0 auto;
+            max-width: 100%;
+            padding: 0 15px; // Pequeno padding lateral
+          }
+
+        @media (max-width: 968px){
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+            width: 450px;
+        }
+
+        @media (max-width: 568px){
+            grid-template-columns: 1fr;
+            margin: 0 auto;
+            width: 450px;
+        }
 
         &__item{
             list-style: none;
+            margin-bottom: 50px;
             img{
                 width: 350px;
                 height: 350px;
