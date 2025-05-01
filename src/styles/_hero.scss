@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+.hero{
+    background-image: url('../../dist/images/hero_desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 65vh;
+    text-align: center;
+    padding: 4.5vw;
+
+
+    &__content{
+        width: 350px;
+        margin-left: 120px;
+        text-align: center;
+
+        &__branding{
+
+            img{
+                width: 230px;
+                display: block;
+                margin-left: 55px;
+                margin-bottom: 14px;
+
+            }
+        }
+    }
+}

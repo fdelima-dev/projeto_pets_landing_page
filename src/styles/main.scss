@@ -1,0 +1,57 @@
+@use 'variaveis';
+@use 'hero';
+@use 'movies';
+@use 'toys';
+@use 'download';
+@use 'footer';
+@use 'header';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'Petters';
+    src: url('../../assets/fonts/petters/Petters.otf') format('truetype');
+}
+body{
+    background-color: variaveis.$corDeFundo;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Petters', sans-serif;
+    color: variaveis.$corSecundaria;
+}
+h2{
+    width: 100%;
+    padding: 14px 0;
+    margin: 0 auto;
+    display: block;
+}
+.link-text{
+    background-color: variaveis.$corBotaoSecundario;
+    color: variaveis.$corTextoBotao;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 8px 20px auto;
+    display: block;
+    width: 300px;
+    transition: background-color .5s ease;
+    border: 2px solid variaveis.$corSecundaria;
+    border-radius: 4px;
+    &:hover{
+        background-color: tomato;
+        font-weight: bold;
+    }
+}
+.text{
+    color: variaveis.$corSecundaria;
+    font-size: 25px;
+}
+h3{
+    font-size: 22px;
+}
+h2{
+    font-size: 45px;
+}

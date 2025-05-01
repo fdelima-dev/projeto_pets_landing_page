@@ -1,0 +1,28 @@
+@use 'variaveis';
+
+.footer{
+    margin-top: 40px;
+    padding: 40px;
+    background-color: variaveis.$corFooter;
+    color: variaveis.$corBranco;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__cpright{
+        font-size: 22px;
+    }
+    &__social{
+        &__media{
+            &__item{
+                list-style: none;
+                display: inline-block;
+                padding: 14px;
+                img{
+                    display: block;
+                    width: 80px;
+                 }
+             }
+         }
+    }
+}

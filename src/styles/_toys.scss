@@ -1,0 +1,31 @@
+@use 'variaveis';
+
+.toys{
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5.4vw;
+
+    &__title{
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        
+
+        &__item{
+            list-style: none;
+            img{
+                width: 350px;
+                height: 350px;
+                
+            }
+        }
+    }
+        
+}

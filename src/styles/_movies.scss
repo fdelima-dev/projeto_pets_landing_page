@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.movies{
+    padding: 5.2vw;
+    max-width: 1024px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+
+    &__title{
+        width: 350px;
+        margin: 0 auto;
+
+    }
+
+    &__list{
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item{
+
+            list-style: none;
+   
+            
+            img{
+                width: 350px;
+                border-radius: 10px;
+
+                box-shadow: 1px 2px 20px variaveis.$corSecundaria;
+            }
+        }
+    }
+}
